@@ -1,0 +1,46 @@
+name: task_todo_now
+description: Manage all of your tasks with Task Todo Now!
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons:
+  intl:
+  sqflite:
+  bloc:
+  flutter_bloc:
+  flutter_slidable:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/nodata.png
+    - images/nodata2.png
+  fonts:
+    - family: Source Sans Pro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
+
+
+    - family: Source Sans Pro Bold
+      fonts:
+        - asset: fonts/SourceSansPro-Black.ttf
+
+    - family: NotoSans
+      fonts:
+        - asset: fonts/NotoSans-Regular.ttf
+
+    - family: Helvetica
+      fonts:
+        - asset: fonts/helvetica-heavy.ttf
