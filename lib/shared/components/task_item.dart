@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:task_todo_now/shared/constants/constants.dart';
@@ -155,6 +157,5 @@ class TaskItem extends StatelessWidget {
     );
   }
 }
-
 
 //AppCubit.get(context).deleteFromDatabase(tasks!['id']);

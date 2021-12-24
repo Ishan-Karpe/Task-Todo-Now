@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
 import 'package:task_todo_now/shared/components/default_form_field.dart';
 import 'package:task_todo_now/shared/constants/constants.dart';
 import 'package:task_todo_now/shared/cubit/cubit.dart';
@@ -82,8 +81,7 @@ class HomeLayout extends StatelessWidget {
                                               child: Text(
                                                 'Cancel',
                                                 style: TextStyle(
-                                                    color:
-                                                        Colors.teal,
+                                                    color: Colors.teal,
                                                     fontSize: 16,
                                                     fontWeight:
                                                         FontWeight.normal),
@@ -173,27 +171,10 @@ class HomeLayout extends StatelessWidget {
                                                   height: 10,
                                                 ),
                                                 DefaultFormField(
-                                                    onTap: () {
-                                                      print('Tapped');
-                                                      showDatePicker(
-                                                          context: context,
-                                                          initialDate:
-                                                          DateTime
-                                                              .now(),
-                                                          firstDate:
-                                                          DateTime.now(),
-                                                          lastDate: DateTime.parse('2021-10-03'))
-                                                          .then((value) =>
-                                                      dateController
-                                                          .text = DateFormat
-                                                          .yMMMd()
-                                                          .format(
-                                                          value!));
-                                                    },
                                                     controller: dateController,
                                                     label: 'Task Deadline',
                                                     type:
-                                                    TextInputType.datetime,
+                                                        TextInputType.datetime,
                                                     validate: (String? value) {
                                                       if (value!.isEmpty) {
                                                         return 'Date must not be empty';
@@ -202,7 +183,7 @@ class HomeLayout extends StatelessWidget {
                                                       return null;
                                                     },
                                                     prefix:
-                                                    Icons.calendar_today),
+                                                        Icons.calendar_today),
                                                 SizedBox(
                                                   height: 320,
                                                 ),
@@ -249,7 +230,7 @@ class HomeLayout extends StatelessWidget {
                     type: BottomNavigationBarType.fixed,
                     items: [
                       BottomNavigationBarItem(
-                          icon: Icon(Icons.menu), label: 'Tasks'),
+                          icon: Icon(Icons.list), label: 'Tasks'),
                       BottomNavigationBarItem(
                           icon: Icon(Icons.check_circle_outline),
                           label: 'Done'),

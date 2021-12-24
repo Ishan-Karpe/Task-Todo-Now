@@ -14,10 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
           brightness: Brightness.dark,
-          bottomSheetTheme: BottomSheetThemeData(backgroundColor: kThemeColor)
-        /* dark theme settings */
-      ),
-      //themeMode: ThemeMode.dark,
+          bottomSheetTheme: BottomSheetThemeData(backgroundColor: kThemeColor)),
       title: 'Task Todo Now',
       theme: ThemeData(
         primarySwatch: Colors.teal,

@@ -34,14 +34,11 @@ class NewTasksScreen extends StatelessWidget {
                           fontWeight: FontWeight.w600),
                     ),
                   ),
-                  // SizedBox(
-                  //   height: 10,
-                  // ),
                   Padding(
                     padding: const EdgeInsets.only(left: 18),
                     child: tasks.length > 0
                         ? Text(
-                            'New tasks',
+                            'New Tasks',
                             style: TextStyle(
                               color: Colors.teal,
                               fontSize: 13,
@@ -64,14 +61,6 @@ class NewTasksScreen extends StatelessWidget {
                               tasks: tasks[index],
                             );
                           },
-                          // separatorBuilder: (context, index) => Padding(
-                          //       padding: const EdgeInsets.only(left: 20),
-                          //       child: Container(
-                          //         width: double.infinity,
-                          //         height: 1.0,
-                          //         color: Colors.grey[200],
-                          //       ),
-                          //     ),
                           itemCount: tasks.length)
                       : Container(
                           child: Center(
